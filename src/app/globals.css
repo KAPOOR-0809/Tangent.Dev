@@ -53,3 +53,124 @@ body {
   scale: 1.2;
   box-shadow: 14px 14px #51249f;
 }
+/*color picker animato*/
+.pickerContainer {
+background-color: #1a1d21;
+border-radius: 16px;
+padding: 20px;
+width: 100%;
+max-width: 380px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+border: 1px solid #333;
+overflow: hidden;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.canvasWrapper {
+margin-bottom: 20px;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.colorCanvas {
+width: 100%;
+height: 200px;
+cursor: crosshair;
+display: block;
+}
+
+.controls {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.sliderContainer {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.sliderLabel {
+color: #c0c0c0;
+font-size: 14px;
+font-weight: 500;
+}
+
+.slider {
+-webkit-appearance: none;
+appearance: none;
+width: 100%;
+height: 8px;
+background: #444;
+border-radius: 4px;
+outline: none;
+cursor: pointer;
+}
+
+/* Chrome, Safari, Opera, and Edge */
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 20px;
+height: 20px;
+background: var(--thumb-color, #fff);
+border-radius: 50%;
+border: 2px solid #fff;
+box-shadow: 0 0 5px rgba(0,0,0,0.5);
+transition: transform 0.1s ease-in-out;
+}
+
+.slider:hover::-webkit-slider-thumb {
+transform: scale(1.1);
+}
+
+.colorDisplay {
+background-color: #25282d;
+border-radius: 10px;
+padding: 12px;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.colorSwatch {
+width: 48px;
+height: 48px;
+border-radius: 8px;
+border: 2px solid #444;
+}
+
+.colorValues {
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+}
+
+.hexValue {
+color: #fff;
+font-size: 16px;
+font-weight: 600;
+}
+
+.hslValue {
+color: #aaa;
+font-size: 12px;
+}
+
+.copyButton {
+background-color: #3e444c;
+color: #fff;
+border: none;
+border-radius: 8px;
+padding: 10px 16px;
+font-size: 14px;
+font-weight: 500;
+cursor: pointer;
+transition: background-color 0.2s;
+}
+
+.copyButton:hover {
+background-color: #4f555e;
+}
